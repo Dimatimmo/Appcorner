@@ -1,0 +1,118 @@
+// custom variables and override bootstrap variables
+
+$body-bg: #fff;
+
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #dadee1;
+$gray-300: #f6f6f6;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #c5c5c5;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:  #000 !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #f25549;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+$brown:   #4f7146;
+$dark-blue:   #26455f;
+$dirt-blue:   #4f485b;
+$light-blue:   #d2e4f4;
+$footer-color: #728fa8;
+
+
+
+
+$colors: ();
+$colors: map-merge((
+	"blue":       $blue,
+	"indigo":     $indigo,
+	"purple":     $purple,
+	"pink":       $pink,
+	"red":        $red,
+	"orange":     $orange,
+	"yellow":     $yellow,
+	"green":      $green,
+	"teal":       $teal,
+	"cyan":       $cyan,
+	"white":      $white,
+	"gray":       $gray-600,
+	"gray-dark":  $gray-800,
+	"brown":      $brown,
+	"dark-blue":  $dark-blue,
+	"dirt-blue":  $dirt-blue,
+	"light-blue":  $light-blue,
+	"footer-color":  $footer-color
+), $colors);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$red:        $red ;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+$dark-blue:          $dark-blue;
+$dirt-blue:          $dirt-blue;
+$light-blue:          $light-blue;
+$footer-color:          $footer-color;
+
+
+
+$theme-colors: ();
+$theme-colors: map-merge((
+	"primary":    $primary,
+	"secondary":  $secondary,
+	"success":    $success,
+	"info":       $info,
+	"warning":    $warning,
+	"danger":     $danger,
+	"light":      $light,
+	"dark":       $dark,
+	"dark-blue":  $dark-blue,
+	"dirt-blue":  $dirt-blue,
+	"light-blue":  $light-blue,
+	"footer-color":  $footer-color,
+	"red":  $red
+), $theme-colors);
+
+$spacer: 1rem ;
+$spacers: () ;
+$spacers: map-merge((
+	0: 0,
+	1: ($spacer * .25),
+	2: ($spacer * .5),
+	3: $spacer,
+	4: ($spacer * 1.25),
+	5: ($spacer * 1.5),
+	6: ($spacer * 3),
+	7: ($spacer * 3.5),
+	8: ($spacer * 4),
+	9: ($spacer * 4.5),
+	10: ($spacer * 5)
+), $spacers);
+
+$base-min-width: 320px;
+
+// This is the default html and body font-size for the base rem value.
+$rem-base: 16px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px
+);
+
+// $grid-gutter-width:           20px; space between col

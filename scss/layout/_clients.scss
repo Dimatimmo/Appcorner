@@ -1,0 +1,97 @@
+.clients{
+	.decor-border{
+			background: $gray-200;
+			.decor-left{
+				background: $gray-200;
+				&:after{
+					content:'';
+					background: $gray-200;
+				}
+				&:before{
+					content:'';
+					background: $gray-200;
+				}
+			}
+			.decor-right{
+				background: $gray-200;
+				&:after{
+					content:'';
+					background: $gray-200;
+				}
+				&:before{
+					content:'';
+					background: $gray-200;
+				}
+			}
+		}
+	.user-info{
+		border-left: 1px solid #26455f;
+		padding-right: rem-calc(80px);
+		@include media("screen", ">=desktop") {
+			padding: 0;
+		}
+	}
+	.blank{
+		padding: rem-calc(30px 30px 20px 20px);
+		background: linear-gradient(135deg, transparent 15px, $gray-300 0) top left;
+		font-size: rem-calc(13px);
+		&:after{
+			content:'';
+			border-bottom: 20px solid $gray-600;
+			border-left: 20px solid transparent;
+			border-right: 0 solid transparent;
+			content: "";
+			height: 0;
+			left: rem-calc(13px);
+			position: absolute;
+			top: 0;
+			width: 0;
+		}
+		.img-holder{
+			border-right: 1px solid #f25549;
+			margin-right: rem-calc(2px);
+		}
+		.blank-head{
+			margin-bottom: rem-calc(30px);
+			.name-holder{
+				padding: rem-calc(0 30px 0 0);
+				@include media("screen", ">=desktop") {
+					padding: 0;
+				}
+				@include media("screen", ">=desktop") {
+					border-bottom: 1px solid #26455f;
+				}
+			}
+			.name{
+				font-size: rem-calc(16px);
+				font-weight: bold;
+				margin:rem-calc(0 0 3px 10px);
+				@include media("screen", ">=desktop") {
+					margin: 0 0 10px 10px rem-calc(0 0 10px 10px);
+				}
+			}
+			.web-holder{
+				margin-left: rem-calc(10px);
+				.web{
+					font-size: rem-calc(13px);
+					font-weight: 400;
+					margin-bottom: 0;
+					display: block;
+					@include media("screen", ">=desktop") {
+						padding: rem-calc(5px 0 6px);
+					}
+				}
+			}
+		}
+		.text{
+			color: #58646e;
+			@include media("screen", ">=tablet") {
+				font-size: rem-calc(14px);
+			}
+			p{
+				margin: 0;
+			}
+		}
+	}
+}
+

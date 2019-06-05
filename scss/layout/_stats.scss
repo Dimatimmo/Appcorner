@@ -1,0 +1,66 @@
+
+
+.flex-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+	margin-bottom: rem-calc(25px);
+	@include media("screen", ">=tablet") {
+		align-items: center;
+	}
+}
+
+.single-chart {
+	width: 33%;
+	justify-content: space-around ;
+	flex-shrink:0;
+}
+
+.circular-chart {
+	display: block;
+	max-width: 100%;
+	max-height: rem-calc(250px);
+}
+
+.circle-bg {
+	fill: none;
+	stroke: #93a2af;
+	stroke-width: 7;
+}
+
+.circle-bg-red {
+	fill: none;
+	stroke: #f9aaa4;
+	stroke-width: 7;
+}
+
+.circle {
+	fill: none;
+	stroke-width: 7;
+	animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+	0% {
+		stroke-dasharray: 0 100;
+	}
+}
+
+.circular-chart.red .circle {
+	stroke: #f25549;
+}
+
+.circular-chart.green .circle {
+	stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+	stroke: #26455f;
+}
+
+.percentage {
+	fill: #666;
+	font-family: sans-serif;
+	font-size: rem-calc(6px);
+	text-anchor: middle;
+}

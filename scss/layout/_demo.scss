@@ -1,0 +1,134 @@
+.demo{
+	background: url(../images/img-demo-bg.png);
+	text-align: center;
+	.demo-holder{
+		padding: rem-calc(60px 0);
+		border-top: 1px solid $white;
+		border-bottom: 1px solid $white;
+		position: relative;
+		@include media("screen", ">=tablet") {
+			border: 1px solid $white;
+		}
+	}
+	.title-wrapper{
+		overflow: hidden;
+		text-align: center;
+		position: relative;
+		margin-bottom: rem-calc(30px);
+		.decore-left{
+			@include media("screen", ">=tablet") {
+				position: absolute;
+				width: rem-calc(3px);
+				height: rem-calc(3px);
+				background: $white;
+				top: 50%;
+				margin-left: rem-calc(-35px);
+			}
+			&:after{
+				content:'';
+				position: absolute;
+				width: rem-calc(3px);
+				height: rem-calc(3px);
+				background: $white;
+				left: rem-calc(-10px);
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				width: rem-calc(3px);
+				height: rem-calc(3px);
+				background: $white;
+				left: rem-calc(-20px);
+			}
+		}
+		.decore-right{
+			@include media("screen", ">=tablet") {
+				position: absolute;
+				width: rem-calc(3px);
+				height: rem-calc(3px);
+				background: $white;
+				top: 50%;
+				margin-left: rem-calc(35px);
+			}
+			&:after{
+				content:'';
+				position: absolute;
+				width: rem-calc(3px);
+				height: rem-calc(3px);
+				background: $white;
+				right: rem-calc(-10px);
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				width: rem-calc(3px);
+				height: rem-calc(3px);
+				background: $white;
+				right: rem-calc(-20px);
+			}
+		}
+		h1{
+			font-size: rem-calc(21px);
+			line-height: 1.47;
+			color: #26445e;
+			font-weight: bold;
+			text-transform: uppercase;
+			position: relative;
+			display: inline-block;
+			margin: 0;
+			max-width: rem-calc(450px);
+			@include media("screen", ">=tablet") {
+				font-size: rem-calc(30px);
+			}
+			&:before,
+			&:after{
+				@include media("screen", ">=tablet") {
+					content:'';
+					position: absolute;
+					width: 999px;
+					height: rem-calc(1px);
+					background: $white;
+					display: block;
+					top: 50%;
+				}
+			}
+			&:before{
+				margin-right: rem-calc(55px);
+				right: 100%;
+			}
+			&:after{
+				margin-left: rem-calc(55px);
+				left: 100%;
+			}
+		}
+	}
+	.decor-border{
+		background: $white;
+		position: absolute;
+		top: 34%;
+		.decor-left{
+			background: $white;
+			left: rem-calc(200px);
+			&:after{
+				content:'';
+				background: $white;
+			}
+			&:before{
+				content:'';
+				background: $white;
+			}
+		}
+		.decor-right{
+			background: $white;
+			right: rem-calc(200px);
+			&:after{
+				content:'';
+				background: $white;
+			}
+			&:before{
+				content:'';
+				background: $white;
+			}
+		}
+	}
+}

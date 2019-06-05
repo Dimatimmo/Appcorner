@@ -1,0 +1,101 @@
+#footer {
+	position: relative;
+	padding: rem-calc(65px 0 50px);
+	font-size: rem-calc(14px);
+	&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: rem-calc(23px);
+			background: url(../images/img-waves.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			transform: scale(1, -1);
+		}
+	.with-bracket{
+		color: $white;
+		&:after{
+			content:']';
+			color: $white;
+		}
+		&:before{
+			content:'[';
+			color: $white;
+		}
+	}
+	.contacts{
+		margin-bottom: rem-calc(30px);
+	}
+	.contact-info{
+		margin-bottom: rem-calc(30px);
+		@include media("screen", ">=desktop") {
+			margin-bottom: 0;
+		}
+		.contacts-col{
+			max-width: rem-calc(140px);
+			margin-right: rem-calc(10px);
+			margin-bottom: rem-calc(10px);
+			@include media("screen", ">=tablet") {
+				margin-right: rem-calc(20px);
+				margin-bottom: 0;
+			}
+			[class*="icon-"]{
+				margin-right: rem-calc(5px);
+				vertical-align: text-bottom;
+			}
+			a{
+				color: inherit;
+				display: block;
+				&:hover{
+					color: $white;
+				}
+			}
+			p{
+				margin: 0;
+			}
+		}
+	}
+
+	.decor-border{
+		background: #516a7f;
+		.decor-left,
+		.decor-right{
+			background: #516a7f;
+			&:after,
+			&:before{
+				content: '';
+				background: #516a7f;
+			}
+		}
+	}
+	.copyright{
+		text-align: center;
+		padding: rem-calc(25px 0 0);
+		margin: 0;
+	}
+}
+
+
+.connect-holder{
+	input,
+	textarea{
+		background-color: #728fa8;
+		box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.6);
+		border: 1px solid #223749;
+		padding: rem-calc(5px 20px 5px 20px);
+		width: 100%;
+		resize: none;
+		margin-bottom: rem-calc(10px);
+		&:focus{
+			outline: none;
+		}
+		@include placeholder{
+			color: $white;
+		}
+	}
+	.btn{
+		min-width: rem-calc(125px);
+	}
+}
